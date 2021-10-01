@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class ejer7 {
+
+	public static void main(String[] args) {
+		
+		Scanner nombre = new Scanner(System.in);
+		Scanner anyos = new Scanner(System.in);
+	}
+
+}

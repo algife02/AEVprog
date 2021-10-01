@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class ejer8 {
+	
+	public static boolean esPrimo(int numero){
+		  int contador = 2;
+		  boolean primo=true;
+		  while ((primo) && (contador!=numero)){
+		    if (numero % contador == 0)
+		      primo = false;
+		    contador++;
+		  }
+		  return primo;
+		}
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		int num1= 0;
+		int num2= 0;
+		int recorrer= 0;
+		
+		System.out.print("Introduce el primer numero: ");
+		num1=teclado.nextInt();
+		System.out.print("Introduce el segundo numero: ");
+		num2=teclado.nextInt();
+		
+		recorrer = num1;
+		
+		while(recorrer !=num2) {
+			if(esPrimo(recorrer)) {
+				System.out.print(recorrer + " es primo");
+			} else {
+				System.out.print(recorrer + " no es primo");
+			}
+			recorrer ++;
+		}
+		teclado.close();
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ejer7 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		String nombre;
+		int numero;
+		
+		System.out.print("introduce tu nombre ");
+		nombre=teclado.nextLine();
+		
+		System.out.print("Introduce tu edad: ");
+		numero=teclado.nextLine();
+		
+	}
+
+}
